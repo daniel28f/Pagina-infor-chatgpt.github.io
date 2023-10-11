@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e4e1e1, #c1a4dd, #c0f7c0);
+    backdrop-filter: blur(30px); /* Ajusta la cantidad de desenfoque según tus preferencias */
+        margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #0074E4, #b6fab6, #6e4444); /* Fondo con degradado de azul a negro */
+    background-size: 200% 100%;
+    text-align: center;
+    padding: 20px;
+    animation: morph-background 5s ease-in-out infinite; /* Aplica la animación al fondo */
+}
+
+@keyframes morph-background {
+    0%, 100% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 0 0;
+    }
+}
+
+
+
+h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilos específicos para el contenido */
+#inicio {
+    background: linear-gradient(to bottom, #1b1a1a, #1b8df8);
+    color: white; /* Agregando color de texto blanco para que sea legible en el fondo oscuro */
+}
+
+#acerca-de {
+    background: linear-gradient(to bottom, #1b8df8, #000000); /* Sobreado de azul a negro invertido */
+    color: white; /* Texto en color blanco para ser legible en el fondo oscuro */
+}
+
+
+#contacto {
+    background: linear-gradient(to bottom, #000000, #0074E4); /* Sobreado de negro a azul */
+    color: white; /* Texto en color blanco para ser legible en el fondo oscuro */
+}
+
+
+/* Estilos para la barra de navegación fija */
+#barra-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+}
+/* Estilos para la barra de navegación */
+#barra-navegacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#barra-navegacion li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#barra-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px; /* Tamaño de fuente más grande */
+    margin:  20px; /* Mayor espaciado horizontal entre elementos */
+}
+/* Estilos para el logo */
+#logo {
+    height: 80px; /* Ajusta el tamaño de la imagen según tu preferencia */
+    float: right; /* Hace que la imagen se alinee a la derecha */
+    margin-right: 20px; /* Agrega margen a la derecha para separarla del título */
+    margin-left: 4px; /* Añade margen izquierdo para mover el logo a la izquierda */
+    margin-top: 0px; /* Ajusta el margen superior para subir el logo */
+
+}
+/* Estilo para el ícono SVG */
+.iconos {
+    margin-left: auto; /* Empuja el ícono hacia la derecha */
+    
+}
+/* Estilos generales para pantallas más grandes */
+body {
+    font-size: 16px;
+}
+
+/* Estilos para pantallas más pequeñas, como teléfonos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+/* Estilos para el botón */
+button.boton-chat {
+    background-color: #ff00ff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 15px 25px; /* Relleno del botón */
+    font-size: 18px; /* Tamaño de fuente */
+    border: none; /* Quita el borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(236, 4, 4, 0.5); /* Sombra ligera */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  }
+  
+  /* Estilos al pasar el mouse sobre el botón */
+  button.boton-chat:hover {
+    background-color: #5c00b3; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Escala el botón ligeramente al pasar el mouse */
+  }
+  
+  
+  .imagen-centrada {
+    display: block;
+    margin: 0 auto;
+}
+/* Estilo predeterminado de los enlaces */
+ul li a {
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+    color: white; /* Color de texto (blanco) */
+    background: #333; /* Color de fondo normal (negro) */
+    transition: background 0.3s; /* Agrega una transición suave de fondo de 0.3 segundos */
+}
+
+/* Cambio de color de fondo al pasar el cursor y bordes */
+/* Cambio de color de fondo al pasar el cursor y bordes redondeados */
+ul li a:hover {
+    background: #ddd0d0; /* Nuevo color de fondo al pasar el cursor (gris) */
+    border-radius: 50px; /* Bordes muy redondeados */
+    font-size: 20px; /* Tamaño de fuente más grande al pasar el cursor */
+
+}
+ul li a {
+    font-size: 18px; /* Cambia el tamaño de fuente según tus preferencias */
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    p {
+        font-size: 16px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+}
+body {
+    backdrop-filter: blur(10px); /* Ajusta el valor de desenfoque según tus preferencias */
+}
+
